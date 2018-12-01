@@ -1,3 +1,21 @@
-.list-group-item {
-  line-height: 2.5;
+body {
+  background-image: linear-gradient(blue , black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
 }
+
+h6 {
+  font-family: 'Francois One', sans-serif;
+  color: white;
+}
+
+#navbar {
+  padding: 0px 16px 0px 0px;
+}
+
+.navbar {
+  height: 100vh;
+}
+

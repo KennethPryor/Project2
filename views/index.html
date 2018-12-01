@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootcamp Radio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/menu.min.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/button.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/grid.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/message.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/form.css'/>
+  <link rel="stylesheet" type="text/css" media="screen" href="../public/styles/styles.css" />
+</head>
+
+<body>
+    <div class="ui modal">
+        <div class="ui attached message">
+            <div class="header">
+              Welcome to our site!
+            </div>
+            <p>Fill out the form below to sign-up for a new account</p>
+          </div>
+          <form class="ui form attached fluid segment">
+            <div class="two fields">
+              <div class="field">
+                <label>First Name</label>
+                <input placeholder="First Name" type="text">
+              </div>
+              <div class="field">
+                <label>Last Name</label>
+                <input placeholder="Last Name" type="text">
+              </div>
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password">
+            </div>
+            <div class="inline field">
+              <div class="ui checkbox">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the terms and conditions</label>
+              </div>
+            </div>
+          </form>
+          <div class="ui bottom attached warning message">
+            <i class="icon help"></i>
+            Already signed up? <a href="#">Login here</a> instead.
+          </div>
+      <div class="actions">
+        <div class="ui blue submit button">Submit</div>
+        <div class="ui cancel button">Cancel</div>
+      </div>
+    </div>
+  </div>
+  <div class="ui grid">
+  <div class="four wide column left attached" id="navbar">
+    <div class="navbar ui vertical inverted menu">
+      <div class="item">
+        <div class="header">Public Rooms</div>
+        <div class="menu">
+          <!-- Test purposes, shoould dynamically load later -->
+          <a class="item" href="">Test Room 1</a>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="header">Your Rooms</div>
+        <div class="menu">
+          <a class="item">Test Room 2</a>
+          <div class="item">
+            <div class="ui mini primary button" id="create_room_btn">Create Room</div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">Your Profile</div>
+        <div class="menu">
+          <!-- Theese are fillers and just for show and testing atm -->
+          <a class="item">Account Info</a>
+          <a class="item">Your Likes</a>
+          <a class="item">Sign out</a>
+          <a class="item" id="log_in_btn">Log In</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h6></h6>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/form.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js'></script>
+<script src="../public/js/modals.js"></script>
+<script src="../server.js"></script>
+
+</html>
