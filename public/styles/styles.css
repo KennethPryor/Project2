@@ -23,3 +23,20 @@ h6 {
   align-items: center;
 }
 
+#song_item {
+  padding: 5px;
+  background-color: white;
+}
+
+.content {
+  color: aliceblue;
+}
+
+#up_vote_btn {
+  background-color: green;
+}
+
+#down_vote_btn {
+  background-color: red;
+}
+
