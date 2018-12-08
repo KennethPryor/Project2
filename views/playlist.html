@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootcamp Radio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/label.min.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/item.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/menu.min.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/button.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/grid.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.min.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dimmer.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/message.css' />
+  <link rel="stylesheet" type="text/css" media="screen" href="../public/styles/styles.css" />
+</head>
+
+<body id="playlist_body">
+  <div class="ui grid">
+    <div class="row">
+      <div class="eight wide column centered">
+        <div class="ui items">
+          <!-- This is a playlist template -->
+          <div class="item" id="song_item">
+            <div class="image">
+              <img src="">
+            </div>
+            <div class="content" id="song_item_content">
+              <a class="header" id="song_item_title">Deep Water</a>
+              <div class="meta">
+                <span id="song_item_artist">American Authors</span>
+                <div class="ui right floated vertical animated button" tabindex="0" id="down_vote_btn">
+                  <div class="visible content"><i class="arrow alternate circle down icon"></i></div>
+                  <div class="hidden content">18 votes</div>
+                </div>
+                <div class="ui right floated vertical animated button" tabindex="0" id="up_vote_btn">
+                  <div class="visible content"><i class="arrow alternate circle up icon"></i></div>
+                  <div class="hidden content">12 votes</div>
+                </div>
+              </div>
+            </div>
+            <!-- Template ends here -->
+          </div>
+        </div>
+      </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dimmer.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/modal.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/form.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js'></script>
+<script src="../public/js/modals.js"></script>
+<script src="../server.js"></script>
+
+</html>
