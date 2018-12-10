@@ -1,15 +1,15 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "marine",
+    "database": "userDB",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "testdb",
+    "password": "marine",
+    "database": "userTestDB",
     "host": "localhost",
     "dialect": "mysql",
     "logging": false
