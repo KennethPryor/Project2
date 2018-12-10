@@ -1,24 +1,17 @@
-var db = require("../models");
+// var db = require("../models");
+// var express = require("express");
+// var app = express();
+// var path = require("path");
 
 module.exports = function(app) {
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+    res.sendFile("../views/index.html");
   });
 
   app.get("/playlist", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
+    res.sendFile("../views/logIn.html");
   });
 
-  // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
   });
