@@ -10,7 +10,7 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/example/:id", function(req, res) {
+  app.get("/playlist", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
       res.render("example", {
         example: dbExample
