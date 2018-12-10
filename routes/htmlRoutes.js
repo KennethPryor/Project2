@@ -5,11 +5,11 @@
 
 module.exports = function(app) {
   app.get("/", function(req, res) {
-    res.sendFile("../views/index.html");
+    res.sendFile("index.html", { root: "views" });
   });
 
   app.get("/playlist", function(req, res) {
-    res.sendFile("../views/logIn.html");
+    res.sendFile("logIn.html", { root: "views" });
   });
 
   app.get("*", function(req, res) {
