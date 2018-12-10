@@ -1,7 +1,6 @@
 // var db = require("../models");
 // var express = require("express");
 // var app = express();
-// var path = require("path");
 
 module.exports = function(app) {
   app.get("/", function(req, res) {
@@ -9,7 +8,7 @@ module.exports = function(app) {
   });
 
   app.get("/playlist", function(req, res) {
-    res.sendFile("logIn.html", { root: "views" });
+    res.sendFile("playlist.html", { root: "views" });
   });
 
   app.get("*", function(req, res) {
