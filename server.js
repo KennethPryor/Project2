@@ -6,7 +6,7 @@ var app = express();
 
 // var db = require("./models");
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3002;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -21,16 +21,6 @@ var syncOptions = { force: false };
 if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
-
-// db.sequelize.sync(syncOptions).then(function() {
-//   app.listen(PORT, function() {
-//     console.log(
-//       "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-//       PORT,
-//       PORT
-//     );
-//   });
-// });
 
 app.listen(PORT, function() {
   console.log(
@@ -63,6 +53,14 @@ spotifyApi.clientCredentialsGrant().then(
     console.log("The access token is " + data.body.access_token);
     // Save the access token so that it's used in future calls
     spotifyApi.setAccessToken(data.body.access_token);
+    spotifyApi.getPlaylist("1QE6kfCWAhDqOYrP2mue9i").then(
+      function(data) {
+        console.log("Some information about this playlist", data.body);
+      },
+      function(err) {
+        console.log("Something went wrong!", err);
+      }
+    );
   },
   function(err) {
     console.log(
