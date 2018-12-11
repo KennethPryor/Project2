@@ -2,6 +2,7 @@
 require("dotenv").config();
 var express = require("express");
 var app = express();
+// var path = require("path");
 
 // var db = require("./models");
 
@@ -13,6 +14,7 @@ app.use(express.static("public"));
 
 // require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+require("./modals");
 
 var syncOptions = { force: false };
 
@@ -51,7 +53,6 @@ spotifyApi.clientCredentialsGrant().then(
     console.log("The access token is " + data.body.access_token);
     // Save the access token so that it's used in future calls
     spotifyApi.setAccessToken(data.body.access_token);
-
     spotifyApi.getPlaylist("1QE6kfCWAhDqOYrP2mue9i").then(
       function(data) {
         console.log("Some information about this playlist", data.body);
@@ -80,7 +81,7 @@ var spotifyApi = new SpotifyWebApi({
 });
 
 spotifyApi.setAccessToken(
-  "BQCTt58D51dm7cyLRzsoxQWqaAx4vOLFZsYOS4aZIV9j8UjEfIsfhKbx829e8gKa538KmUJvokQLN7xSDW8"
+  "BQD7ZBZ0F4weNZ7_hckYuXQgObQC_kpQ936_JXMXODY1wZ2rVcPc4r8zhkE27kPzuDZQARZi_H_XLHeuMJY"
 );
 
 // GET https://api.spotify.com/v1/playlists/1QE6kfCWAhDqOYrP2mue9i
@@ -96,4 +97,8 @@ spotifyApi.getPlaylist("1QE6kfCWAhDqOYrP2mue9i").then(
   function(err) {
     console.log("Something went wrong!", err);
   }
+);
+
+console.log(
+  "When you have tough times, and when you learn you can't be perfect in every situation, it's hard to accept, you know, because I still do expect that. But you just have to, because, you know, it's not about the situation. It's how you deal with it. You always have a choice. -Ana Ivanovic"
 );

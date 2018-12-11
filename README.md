@@ -1,9 +1,16 @@
 # Bootcamp Radio 
-##(Name still WIP)
+### _Powered by Spotify_
 
-### Rough Draft
+## Summary
 
-We are building a song request app that lets users add and vote on songs in "playlist".
-We got tired of our instructors music and really tired of Queens.So we are creating an website 
-that lets you vote on songs that others have requested or you have added that can move it up/down in
-the playlist and it will play the top song. More features are a WIP and being discussed.
+This Project is a Playlist designed for our class so our Instructors
+can't keep playing _Queems_ over and over. You log-in or create an 
+account so you can add/vote on songs in the playlist and those songs
+will play thanks to Spotify API.
+
+### Future Updates as of 12/10
+
+One of our developers left in the middle of this Project and didn't
+start on his task to create the voting system as we planned to be 
+released on 12/11. We could not meet the deadline with this feature
+so it will be added in a future update.
