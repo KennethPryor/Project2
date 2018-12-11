@@ -100,3 +100,7 @@ spotifyApi.getPlaylist("1QE6kfCWAhDqOYrP2mue9i").then(
     console.log("Something went wrong!", err);
   }
 );
+
+console.log(
+  "When you have tough times, and when you learn you can't be perfect in every situation, it's hard to accept, you know, because I still do expect that. But you just have to, because, you know, it's not about the situation. It's how you deal with it. You always have a choice. -Ana Ivanovic"
+);
