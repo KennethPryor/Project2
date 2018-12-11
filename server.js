@@ -83,7 +83,7 @@ var spotifyApi = new SpotifyWebApi({
 });
 
 spotifyApi.setAccessToken(
-  "BQCTt58D51dm7cyLRzsoxQWqaAx4vOLFZsYOS4aZIV9j8UjEfIsfhKbx829e8gKa538KmUJvokQLN7xSDW8"
+  "BQD7ZBZ0F4weNZ7_hckYuXQgObQC_kpQ936_JXMXODY1wZ2rVcPc4r8zhkE27kPzuDZQARZi_H_XLHeuMJY"
 );
 
 // GET https://api.spotify.com/v1/playlists/1QE6kfCWAhDqOYrP2mue9i
