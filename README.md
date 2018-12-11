@@ -11,6 +11,6 @@ will play thanks to Spotify API.
 ### Future Updates as of 12/10
 
 One of our developers left in the middle of this Project and didn't
-start on his task to create the votign system as we planned to be 
-released on 12/11. We could nto meet the deadline with this feature
+start on his task to create the voting system as we planned to be 
+released on 12/11. We could not meet the deadline with this feature
 so it will be added in a future update.
